@@ -1,0 +1,27 @@
+.wrapper {
+    font-size: 50px;
+
+    .btns {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        button {
+            border: none;
+            background-color: #e8e8e8;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 50px;
+
+            &:hover {
+                background-color: #d4d4d4;
+            }
+
+            &:active {
+                background-color: #bdbdbd;
+            }
+        }
+    }
+
+}
