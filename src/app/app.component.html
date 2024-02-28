@@ -8,11 +8,9 @@
   <div>
     <p>Counter stream: <b>{{count$ | async}}</b></p>
 
-
     @if (!!(uptatedAt$ | async)) {
     <p>Updated Date: <b>{{uptatedAt$ | async | date:'HH:mm:ss dd/MM/yyyy'}}</b></p>
     }
-
 
   </div>
 </div>

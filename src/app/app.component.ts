@@ -32,15 +32,15 @@ export class AppComponent {
   uptatedAt$ = this.store.select(uptatedAtSelector);
 
   increase() {
-    this.setDate();
+    // this.setDate();
     this.store.dispatch(increase());
   }
   decrease() {
-    this.setDate();
+    // this.setDate();
     this.store.dispatch(decrease());
   }
   reset() {
-    this.setDate();
+    // this.setDate();
     this.store.dispatch(reset());
   }
 

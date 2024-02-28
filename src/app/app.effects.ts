@@ -5,11 +5,12 @@ import { map } from 'rxjs/operators';
 
 @Injectable()
 export class AppEffects {
+  private actions$ = inject(Actions);
+
   updatedAt$ = createEffect(() =>
     this.actions$.pipe(
       ofType(increase, decrease, reset),
       map(() => updatedAt({ updatedAt: Date.now() }))
     )
   );
-  private actions$ = inject(Actions);
 }
